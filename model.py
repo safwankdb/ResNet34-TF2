@@ -34,9 +34,9 @@ class ResBlock(Model):
 
 
 
-class PalmNet(Model):
+class ResNet(Model):
     def __init__(self):
-        super(PalmNet, self).__init__(name='PalmNet')
+        super(ResNet, self).__init__(name='ResNet34')
         self.conv1 = Conv2D(64, 7, 2, padding='same')
         self.bn = BatchNormalization()
         self.relu = ReLU()
@@ -105,6 +105,6 @@ class PalmNet(Model):
         return x
 
 
-model = PalmNet()
+model = ResNet()
 model.build(input_shape=(1, 480, 480, 3))
 model.summary()
