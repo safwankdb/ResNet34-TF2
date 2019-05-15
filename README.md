@@ -9,7 +9,7 @@ This is an implementation of ResNet-34 in TensorFlow2.0 using the Imperative API
 ### Code Walkthrough
 The architecture is based on 34 layer sample (snippet from paper)
 
-![Architecture Reference](img/resnet-arch.png "Architecture Reference")
+![Architecture Reference](img/resnet_arch.png "Architecture Reference")
 
 There are two key aspects to note here
 
