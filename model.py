@@ -30,7 +30,7 @@ class ResBlock(Model):
             x = self.bn3(x)
         x1 = Layers.add([x, x1])
         x1 = self.relu(x1)
-        return x7
+        return x1
 
 
 class ResNet34(Model):
